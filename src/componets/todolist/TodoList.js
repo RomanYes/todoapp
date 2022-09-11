@@ -81,16 +81,16 @@ const TodoList = () => {
             setTask={setTaskToEdit}
           />}
       </Modal>
-      <div className={cl.todo_container}>
-        {tasks ? tasks.map((task) => <TodoItem
-          edit={setIsEditTask}
-          taskToEdit={setTaskToEdit}
-          checked={checked}
-          remove={removeTask}
-          task={task}
-          key={task.id}
-        />) : ''}
-      </div>
+        {tasks.length ? <div className={cl.todo_container}>
+            {tasks ? tasks.map((task) => <TodoItem
+                edit={setIsEditTask}
+                taskToEdit={setTaskToEdit}
+                checked={checked}
+                remove={removeTask}
+                task={task}
+                key={task.id}
+            />) : ''}
+        </div> : <h2>The list of tasks is empty...</h2>}
     </div>
   );
 };
