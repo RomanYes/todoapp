@@ -14,8 +14,8 @@ const TodoItem = ({task, checked, remove, edit, taskToEdit}) => {
         <div className={cl.todo_info}>
           <Checkbox checked={task.isCompleted} onChange={() => checked(task)}/>
           <div className={cl.todo_text} style={task.isCompleted ? {textDecoration: 'line-through'} : {}}>
-            <span><b>Title:</b>{task.title}</span>
-            <span><b>Description:</b>{task.description}</span>
+            <span><b>Title:</b><i className={cl.text_input}>{task.title}</i></span>
+            <span><b>Description:</b><i className={cl.text_input}>{task.description}</i></span>
           </div>
         </div>
         <div className={cl.buttons}>

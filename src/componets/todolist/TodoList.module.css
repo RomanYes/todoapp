@@ -1,6 +1,7 @@
 .todo_container{
     padding: 10px 10px 0 10px;
-    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #59c3db;
 }
 
 .todo_list_header{
