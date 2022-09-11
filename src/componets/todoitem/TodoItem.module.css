@@ -1,0 +1,24 @@
+.item_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.todo_info{
+    display: flex;
+}
+.todo_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.container{
+    border: 1px solid red;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
