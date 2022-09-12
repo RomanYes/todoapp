@@ -14,7 +14,7 @@
 .todo_text{
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+    margin-left: 8px;
     font-size: 18px;
 }
 
